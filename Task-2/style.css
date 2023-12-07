@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(220deg 11% 89%);
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom:35px;
+}
+.logo img{
+    margin-left: 120px;
+}
+.menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: #545454;
+}
+.btn{
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(225deg 43% 28%);
+    color:hsl(0deg 0% 100%);
+    padding: 14px 20px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.box1{
+    width: 650px;
+    margin-left: 130px;
+}
+.para,.paral,.form,.box1 h1{
+    padding: 10px 35px;
+}
+.para{
+    background-color:hsl(255deg 43% 28%);
+    color:hsl(255deg 43% 83%);
+    border-radius:20px;
+    width:435px;
+    margin-left: 40px;
+}
+.para a{
+    color:hsl(250deg 43% 83%);
+}
+.box1 h1{
+    font-size: 50px;
+    color:hsl(220deg 24% 26%);
+}
+.paral{
+    color:hsl(0deg 0% 33%);
+}
+input{
+    padding: 10px;
+    width: 300px;
+    border:1px solid lightslategrey;
+    border-radius: 6px;
+}
+input::placeholder{
+    color:hsl(220deg 2% 75%);;
+}
+.box2{
+    margin-right: 170px;;
+}
+.box2 img{
+    width: 350px;
+    height: 350px;
+}
+.partner{
+    width: 500px;
+    margin-left: 150px;
+    padding: 10px 36px;
+    color: hsl(0deg 0% 33%);
+}
+.partner h3{
+    padding: 10px;
+}
+.company{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.x img{
+    display: none;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img{
+        padding-right: 450px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .box1{
+        width: 100%;
+        text-align: center;
+    }
+    .box1 .btn{
+        width: 300px;
+    }
+    .para{
+        width: 310px;
+    }
+    .box2{
+        display: none;
+    }
+
+    .form {
+        width: 600px;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 250px;
+    }
+
+    .company {
+        width: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .x img{
+        display: block;
+        padding-top: 0;
+        padding-left: 350px;
+    }
+}
+
