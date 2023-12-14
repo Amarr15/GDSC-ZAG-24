@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    
+
+    <!--task1-->
+
+    <script>
+      // Code One
+      //It won't work because the compiler work line by line and he doesn't see element with id e1
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      //it work cuz after the website is loaded he can see and search the required id element 
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      //it work cuz the compiler work line by line and he see element with id e1
+    document.getElementById("el").style.color = "red";
+    </script>
+
+
+    <!--task2-->
+
+    <script>
+        console.log("<h1>%cElzero</h1>","color: blue;font-size: 80px;font-weight: bold;text-align: center;font-family: Arial");
+    </script>
+
+ 
+
+    <!--task6-->
+
+    <script>
+        
+        //console.log("Iam In Console");
+        //document.write("Iam In Page");
+
+        /*console.log("Iam In Console");
+        document.write("Iam In Page");
+        */
+    </script>
+
+<h4 id="elzero">Amar</h4>
+<script src="task2.js"></script>
+  </body>
+</html>
